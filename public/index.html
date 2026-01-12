@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Live Weather Dashboard</h1>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <section class="card search-card">
+          <h2>Search for a City</h2>
+          <form id="search-form">
+            <input type="text" id="search-input" placeholder="e.g., New York" />
+            <button type="submit">Search</button>
+          </form>
+        </section>
+
+        <section class="card history-card">
+          <h2>Search History</h2>
+          <div id="history-container"></div>
+        </section>
+      </aside>
+
+      <section class="weather-display">
+        <div id="loader" class="loader hidden">Loading…</div>
+        <div id="error-container" class="error-message hidden"></div>
+
+        <section class="card current-weather-section">
+          <h2 id="city-name-date">City Name (Date)</h2>
+          <div class="weather-stats">
+            <p>🌡 <span id="temperature">--</span> °C</p>
+            <p>💧 <span id="humidity">--</span>%</p>
+            <p>🌬 <span id="wind-speed">--</span> m/s</p>
+          </div>
+        </section>
+
+        <section class="forecast-section">
+          <h2>5-Day Forecast</h2>
+          <div id="forecast-container" class="forecast-grid"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>

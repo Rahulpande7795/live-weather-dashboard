@@ -1,0 +1,25 @@
+{
+  "name": "weather-dashboard",
+  "version": "1.0.0",
+  "description": "A simple, real-time weather dashboard that shows current conditions based on user location or a searched city. The app fetches live weather data from a public API and displays key details like temperature, humidity, wind speed, and conditions in a clean, responsive interface. Built to be fast and easy to use, with a focus on clear visuals.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahulpande7795/live-weather-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rahulpande7795/live-weather-dashboard/issues"
+  },
+  "homepage": "https://github.com/Rahulpande7795/live-weather-dashboard#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  }
+}
